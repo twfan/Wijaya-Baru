@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Karoseri Wijaya</string>
+    <string name="content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis mi vitae dictum luctus. In elementum vulputate ultricies. Aliquam sed facilisis dolor. Suspendisse pharetra odio suscipit sagittis euismod. Morbi libero enim, facilisis a odio quis, elementum congue sapien. Nullam porttitor et nunc in eleifend. Ut ac facilisis lorem, vel suscipit elit. Sed commodo nisl ultrices, viverra ligula nec, rutrum erat. Vestibulum sollicitudin purus dolor, non auctor nulla fermentum feugiat. Fusce in pulvinar elit, quis eleifend lectus. Suspendisse laoreet pharetra urna, eget tincidunt metus euismod ut. Nam arcu odio, bibendum vel ante et, eleifend placerat dui. </string>
+    <string name="content_specs_display">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis mi vitae dictum luctus. In elementum vulputate ultricies. Aliquam sed facilisis dolor. Suspendisse pharetra </string>
+    <string name="content_specs_size">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="content_specs_battery">Lorem ipsum dolor sit amet</string>
+    <string name="dummy_photos">6 Photos</string>
+    <string name="dummy_price">75 %</string>
+    <string name="dummy_stock">Progress</string>
+    <string name="dummy_spesifikasi">Spesifikasi</string>
+    <string name="dummy_display">Display</string>
+    <string name="dummy_size">Size</string>
+    <string name="dummy_battery">Battery</string>
+    <string name="dummy_penjual">Dijual oleh</string>
+    <string name="dummy_nama">Narendra Wicaksono</string>
+    <string name="dummy_beli">Beli</string>
+
+
+    <!--Menu-->
+    <string name="home">Home</string>
+    <string name="profil">Profil</string>
+    <string name="Pesanan">Pesanan</string>
+    <string name="inbox">Inbox</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pesanan_selesai">Pesanan Selesai</string>
+    <string name="pesanan_masuk">Pesanan Masuk</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="berita">Berita</string>
+    <string name="profile_picture_name"><![CDATA[Profile Picture & Name]]></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <!--end menu-->
+
+
+</resources>

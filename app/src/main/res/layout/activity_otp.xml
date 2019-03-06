@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verification code"
+                android:textSize="20sp"
+                android:layout_marginLeft="@dimen/margin_left_OTP"
+                android:gravity="left"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/margin_left_OTP"
+                android:text="Please type the verification code sent to "/>
+            <TextView
+                android:id="@+id/nomor_telfon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_OTP"
+                android:text="085732777009"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="30dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:id="@+id/number0"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:inputType="numberPassword"
+                        android:text=""
+                        />
+
+                    <EditText
+                        android:id="@+id/number1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="25sp"
+                        android:inputType="numberPassword"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text=""
+                        />
+
+                    <EditText
+                        android:id="@+id/number2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="25sp"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="numberPassword"
+                        android:text=""
+                        />
+
+                    <EditText
+                        android:id="@+id/number3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:textSize="25sp"
+                        android:enabled="false"
+                        android:inputType="numberPassword"
+                        android:gravity="center"
+                        android:text=""
+                        />
+
+                    <EditText
+                        android:id="@+id/number4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:enabled="false"
+                        android:textSize="25sp"
+                        android:inputType="numberPassword"
+                        android:gravity="center"
+                        android:text=""
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginLeft="@dimen/margin_left_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Didnt receive a code?"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:id="@+id/txt_pleasewait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please Wait "
+                                />
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/timer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                            <TextView
+                                android:id="@+id/resend_code"
+                                android:visibility="gone"
+                                android:text="Resend Code"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/button1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="50dp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="30sp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/button2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:layout_marginRight="50dp"
+                                android:text="2"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textSize="30sp"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/button4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="50dp"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:layout_marginRight="50dp"
+                                android:text="5"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textSize="30sp"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/button7"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="50dp"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button8"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:layout_marginRight="50dp"
+                                android:text="8"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button9"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="30sp"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="50dp"
+                                android:gravity="center"
+                                android:text=""
+                                android:visibility="invisible"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/button0"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:layout_marginRight="50dp"
+                                android:text="0"
+                                android:textSize="30sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/backspace"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:background="@drawable/ic_backspace"
+                                android:textSize="30sp"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
